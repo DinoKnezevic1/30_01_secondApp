@@ -1,7 +1,7 @@
-<app-crvena (testKlika)="odgovoriNaKlik($event)" [myColor]="prva"></app-crvena>
-<app-plava (testKlika)="odgovoriNaKlik($event)"[myColor]="druga"></app-plava>
-<app-zelena (testKlika)="odgovoriNaKlik($event)"[myColor]="treca"></app-zelena>
-
+<app-crvena *ngIf="prikaziPrvu"(testKlika)="odgovoriNaKlik($event)" [myColor]="prva"></app-crvena>
+<app-plava *ngIf="prikaziDrugu" (testKlika)="odgovoriNaKlik($event)"[myColor]="druga"></app-plava>
+<app-zelena *ngIf="prikaziTrecu" (testKlika)="odgovoriNaKlik($event)"[myColor]="treca"></app-zelena>
+<!--*ngIf="expression"-->
 <hr>
 
 PRVA: <input type="text" [(ngModel)]="prva">

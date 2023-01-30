@@ -10,8 +10,14 @@ export class AppComponent {
 
   odgovoriNaKlik(boja: string){
     console.log(boja);
+    this.prikaziTrecu=!this.prikaziTrecu;
   }
   prva: string='';
   druga: string='';
   treca: string='';
+
+  prikaziPrvu=true;
+  prikaziDrugu=true;
+  prikaziTrecu=false;
+
 }
