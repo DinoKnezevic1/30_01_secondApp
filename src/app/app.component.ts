@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'secondApp';
+
+  odgovoriNaKlik(boja: string){
+    console.log(boja);
+  }
+  prva: string='';
+  druga: string='';
+  treca: string='';
 }
